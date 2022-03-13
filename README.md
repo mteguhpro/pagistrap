@@ -6,3 +6,7 @@ This template focuses on using Bootstrap version 5's default classes and utility
 ### Blank Page:
 Simple and ready-to-use page to start a new project.
 ![Blank Page pagistrap Bootstrap 5 template](https://github.com/mteguhpro/pagistrap/blob/main/preview/pagistrap_blank_page.PNG)
+
+### Dashboard 1:
+Admin dashboard with a simple and elegant design.
+![Dashboard 1 pagistrap Bootstrap 5 template](https://github.com/mteguhpro/pagistrap/blob/main/preview/pagistrap_dashboard_1.PNG)
