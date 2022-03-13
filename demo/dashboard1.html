@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css">
+    <title>Dashboard 1</title>
+    <meta name="description"
+        content="Ini adalah demo untuk dashboard 1 yang mana sudah dilengkapi dengan contoh integrasi penggunaan Grid.js dan Chart.js">
+</head>
+
+<body class="bg-body">
+
+    <div class="te-sidenav">
+        <div class="te-sidenav-content p-1 bg-dark shadow-sm">
+            <!-- start sidenav content -->
+            <div class="container-fluid text-center py-2">
+                <a class="fs-4 text-nowrap text-white text-decoration-none"
+                    href="https://github.com/mteguhpro/pagistrap">
+                    P<span class="text-menu">agi</span>s<span class="text-menu">trap</span>
+                </a>
+            </div>
+            <div class="nav nav-pills flex-column">
+                <a class="nav-link text-nowrap bg-dark text-white te-with-caret caret-open" data-bs-toggle="collapse"
+                    href="#collapseDemo" role="button" aria-expanded="true" aria-controls="collapseDemo">
+                    <i class="bi bi-layers-fill"></i><span class="text-menu"> Demo</span>
+                </a>
+                <div class="collapse show" id="collapseDemo">
+                    <a class="nav-link text-nowrap bg-success active" href="./dashboard1.html"><i
+                            class="bi bi-layout-text-window-reverse"></i>
+                        <span class="text-menu"> Dashboard 1</span>
+                        <span class="text-menu badge bg-white text-success position-absolute end-0 mx-2">1</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-dark text-white" href="#"><i
+                            class="bi bi-layout-text-window-reverse"></i><span class="text-menu"> Dashboard 2</span></a>
+                    <a class="nav-link text-nowrap bg-dark text-white" href="./blank_page.html"><i
+                            class="bi bi-layout-sidebar"></i><span class="text-menu"> Blank Page</span></a>
+                </div>
+                <a class="nav-link text-nowrap disabled" href="#" tabindex="-1" aria-disabled="true"><i
+                        class="bi bi-lock-fill"></i><span class="text-menu"> Disabled</span></a>
+            </div>
+            <!-- end sidenav content -->
+        </div>
+    </div>
+
+    <div class="te-out-sidenav pb-5 position-relative">
+        <div class="position-absolute w-100 top-0 start-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 74.0 52.0">
+                <path
+                    d="M -0.0782175,-0.12027828 -0.18068336,31.480662 c 0,0 4.16274916,-6.607175 8.70959846,-6.545178 5.6486159,0.07701 6.3674879,-1.966713 9.0169979,-3.8862 21.378152,-15.4878142 4.777386,0.06896 4.40603,0.409074 -2.9032,2.658979 5.987471,-0.81692 5.987471,-0.81692 0,0 10.754696,-6.125252 17.784613,-4.603307 2.913728,0.630809 4.416729,-3.53713 6.762747,-5.11342 2.6045,-1.7499637 5.09519,-3.8810601 8.094801,-4.8066158 3.629289,-1.1198483 4.009238,-1.7842802 8.402202,-2.0453684 1.842387,-0.109499 3.176442,-4.19300508 3.176442,-4.19300508 z"
+                    style="fill:#198754;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+            </svg>
+        </div>
+        <!-- start main content -->
+        <nav class="navbar navbar-expand sticky-top navbar-dark bg-success bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand te-toggle-sidenav" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+
+                <div class="d-flex">
+                    <form class="my-auto pe-2">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn btn-dark btn-sm mx-2 position-relative">
+                        <i class="bi bi-bell-fill"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn btn-dark btn-sm mx-2 position-relative">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            12
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark dropdown-toggle btn-sm mx-2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end bg-transparent p-0 border-0">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img src="https://picsum.photos/300/100.webp" class="card-img-top" alt="Foto Sampul">
+                                <div class="card-body text-center position-relative">
+                                    <img src="https://picsum.photos/100.webp" class="w-25 position-absolute translate-middle border border-light rounded-circle" alt="Foto Profil">
+                                    <h5 class="card-title mt-5">Nama Pengguna</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">@namapengguna</h6>
+                                    <p class="card-text">
+                                        <a href="#" class="card-link">Kebijakan Privasi</a>
+                                        <a href="#" class="card-link">Bantuan</a>
+                                    </p>
+
+                                    <div class="d-grid gap-2">
+                                            <button type="button" class="btn btn-dark"><i
+                                                    class="bi bi-gear-fill"></i> Setting</button>
+                                            <button type="button" class="btn btn-dark text-danger"><i
+                                                    class="bi bi-box-arrow-right"></i> Logout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-xxl mt-4 mb-5">
+            <div class="row">
+                <div class="col-lg-7 col-xl-8">
+                    <div class="card shadow mb-2">
+                        <h1 class="card-title text-center">Dashboard 1</h1>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div id="wrapper-gridjs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-4">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <canvas id="chartjs-donat"></canvas>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <canvas id="chartjs-line"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="border-start border-5 border-success bg-white shadow mb-2">
+                        <div class="card-body text-success">
+                            <h4 class="card-title">Unit Baru</h4>
+                            <p class="card-text">
+                                <span class="display-4">60</span> <strong>Unit</strong>
+                            </p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="border-start border-5 border-success bg-white shadow mb-2">
+                        <div class="card-body text-success">
+                            <h4 class="card-title">Unit Lama</h4>
+                            <p class="card-text">
+                                <span class="display-4">18</span> <strong>Unit</strong>
+                            </p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 18%;"
+                                    aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="border-start border-5 border-success bg-white shadow mb-2">
+                        <div class="card-body text-success">
+                            <h4 class="card-title">Unit Terpakai</h4>
+                            <p class="card-text">
+                                <span class="display-4">22</span> <strong>Unit</strong>
+                            </p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 22%;"
+                                    aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="border-start border-5 border-success bg-white shadow mb-2">
+                        <div class="card-body text-success">
+                            <h4 class="card-title">Unit Rusak</h4>
+                            <p class="card-text">
+                                <span class="display-4">04</span> <strong>Unit</strong>
+                            </p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 4%;"
+                                    aria-valuenow="4" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end main content -->
+
+        <!-- start footer -->
+        <footer class="footer mt-auto py-3 border-top bg-light w-100 position-fixed bottom-0">
+            <div class="container">
+                <span class="text-muted">2022 <i class="bi bi-heart"></i> for all happiness</span>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        (function () {
+            'use strict';
+            //secara default sidenav dalam mode hide, kode dibawah untuk menampilkan sidenav saat pertama load di layar lebih 992
+            if (window.innerWidth >= 992) {
+                teSidenav.toggle();
+            }
+
+            //gridjs
+            new gridjs.Grid({
+                columns: [
+                    "Nama",
+                    "Tipe Member",
+                    {
+                        name: "Saldo",
+                        formatter: (cell) => gridjs.html(`<div class="text-end">${parseInt(cell).toLocaleString('id-ID')}</div>`),
+                        sort: {
+                            compare: (a, b) => a - b
+                        }
+                    }
+                ],
+                data: [
+                    ["Rosidah", "Silver", "25000000"],
+                    ["Mukidi", "Gold", "400000000"],
+                    ["Markonah", "Platinum", "2000100000"],
+                    ["Bejo", "Platinum", "1534000000"],
+                    ["Marjuki", "Gold", "200000000"],
+                    ["Sumiyati", "Silver", "90000000"],
+                    ["Lilik", "Gold", "131000000"],
+                    ["Poniran", "Platinum", "900000000"],
+                    ["Katimin", "Gold", "106000000"],
+                    ["Solikin", "Silver", "28500000"],
+                    ["Suwandi", "Silver", "22000000"],
+                    ["Mesinem", "Gold", "309000000"],
+                    ["Agus Santo", "Platinum", "979000000"],
+                    ["Sarah", "Silver", "22000000"],
+                    ["Anik", "Gold", "100100000"],
+                ],
+                search: {
+                    enabled: true
+                },
+                sort: true,
+                pagination: {
+                    enabled: true,
+                    limit: 10,
+                    summary: false
+                },
+            }).render(document.getElementById("wrapper-gridjs"));
+
+            //chartjs
+            const chartDonat = new Chart(document.getElementById('chartjs-donat'), {
+                type: 'doughnut',
+                data: {
+                    labels: [
+                        'Komputer',
+                        'Laptop',
+                        'Tablet',
+                        'Smartphone',
+                    ],
+                    datasets: [{
+                        label: 'My First Dataset',
+                        data: [200, 134, 12, 321],
+                        backgroundColor: [
+                            '#6f42c1',
+                            '#0d6efd',
+                            '#20c997',
+                            '#fd7e14'
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+            });
+            const chartLine = new Chart(document.getElementById('chartjs-line'), {
+                type: 'line',
+                data: {
+                    labels: [
+                        'Jan',
+                        'Feb',
+                        'Mar',
+                        'Apr',
+                        'Mei',
+                        'Jun',
+                    ],
+                    datasets: [{
+                        label: 'Jumlah Barang Keluar',
+                        data: [347, 1981, 2000, 3060, 1290, 2022],
+                        fill: false,
+                        borderColor: '#198754',
+                        tension: 0.1
+                    }]
+                },
+            });
+
+        })()
+    </script>
+</body>
+
+</html>
