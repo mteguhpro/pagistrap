@@ -24,7 +24,7 @@
 
 <body class="bg-light d-flex flex-column min-vh-100">
 
-    <div class="te-sidenav">
+    <div class="te-sidenav te-active">
         <div class="te-sidenav-content p-1 bg-light">
             <!-- start sidenav content -->
             <div class="container-fluid text-center py-2">
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="te-out-sidenav">
+    <div class="te-out-sidenav te-active">
         <!-- start main content -->
         <nav class="navbar navbar-expand sticky-top navbar-light bg-light">
             <div class="container-fluid">
@@ -190,7 +190,7 @@
         <!-- end main content -->
     </div>
 
-    <div class="te-out-sidenav mt-auto">
+    <div class="te-out-sidenav te-active mt-auto">
         <!-- start footer -->
         <footer class="footer py-3 border-top bg-light bg-gradient">
             <div class="container">
@@ -223,6 +223,11 @@
     <script>
         (function () {
             'use strict';
+
+            // fungsi teSidenav.isShow() mengembalikan nilai true jika sidenav dalam keadaan aktif dan false jika sebaliknya
+            if (window.innerWidth < 768 && teSidenav.isShow()) {
+                teSidenav.toggle()
+            }
 
             //ApexCharts
             const chartRam = new ApexCharts(document.querySelector("#chart-ram"),
@@ -394,14 +399,6 @@
                 ]
             });
 
-            //secara default sidenav dalam mode hide, kode dibawah untuk menampilkan sidenav saat pertama load di layar lebih 992
-            if (window.innerWidth >= 992) {
-                //gunakan setTimeout jika anda menggunakan ApexCharts
-                setTimeout(teSidenav.toggle, 1000);
-
-                //dibawah ini contoh cara pemanggilan teSidenav.toggle jika di halaman ini tidak menggunakan ApexCharts
-                // teSidenav.toggle();
-            }
         })()
     </script>
 </body>
