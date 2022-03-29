@@ -64,7 +64,7 @@
         <!-- start main content -->
         <nav class="navbar navbar-expand sticky-top navbar-light bg-light">
             <div class="container-fluid">
-                <button type="button" class="btn btn-secondary btn-sm me-2 te-toggle-sidenav">
+                <button type="button" class="btn btn-secondary btn-sm me-2 my-1 te-toggle-sidenav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-list-ul" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -176,7 +176,9 @@
                     <div class="card shadow">
                         <h2 class="card-title ms-3 mt-1">Info Terbaru</h2>
                         <div class="card-body">
-                            <div id="info-baru"></div>
+                            <form method="post">
+                                <textarea name="info-baru" id="info-baru"></textarea>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -379,13 +381,16 @@
                 height: 400,
                 toolbar: [
                     ['style', ['style']],
-                    ['font', ['bold', 'underline', 'clear']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontstyle', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
                     ['fontname', ['fontname']],
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
                     ['table', ['table']],
                     ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']],
+                    ['height', ['height']],
+                    ['view', ['codeview', 'help']],
                 ]
             });
 
