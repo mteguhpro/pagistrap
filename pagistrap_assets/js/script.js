@@ -9,11 +9,14 @@ var teSidenav = (function () {
             cb(el[i]);
         }
     };
-    var isSidenavShow = false;
+    var isSidenavShow = null;
     var eventShow = new Event('show.te.sidenav');
     var eventHide = new Event('hide.te.sidenav');
     var sn = document.getElementsByClassName("te-sidenav");
     var osn = document.getElementsByClassName("te-out-sidenav");
+    getClass(sn, function (el) {
+        isSidenavShow = (el.className.indexOf('te-active') === -1) ? false : true;
+    });
     var toggleSidenav = function () {
         isSidenavShow = !isSidenavShow
         if (isSidenavShow) {
