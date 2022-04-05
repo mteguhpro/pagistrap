@@ -29,6 +29,8 @@
     overflow-x: hidden;
     overflow-y: scroll;
     transition: width 0.5s, left 0.5s;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(150, 150, 150, 0.5) transparent;
 }
 
 .te-out-sidenav {
