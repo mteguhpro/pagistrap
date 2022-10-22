@@ -8,7 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/gridjs@5.1.0/dist/theme/mermaid.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="../pagistrap_assets/css/style.css">
     <title>Dashboard 1</title>
     <meta name="description"
@@ -334,7 +334,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gridjs@5.1.0/dist/gridjs.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="../pagistrap_assets/js/script.js"></script>
     <script>
@@ -383,6 +383,11 @@
                     enabled: true,
                     limit: 10,
                     summary: false
+                },
+                style: {
+                    table: {
+                        "min-width": '100%'
+                    }
                 },
             }).render(document.getElementById("wrapper-gridjs"));
 
