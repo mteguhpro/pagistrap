@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../pagistrap_assets/css/style.css">
+    <title>Dashboard 3</title>
+    <meta name="description"
+        content="Dashboard 3 dengan contoh berbagai macam style input dan form">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <div class="te-sidenav">
+        <div class="te-sidenav-content p-1 rounded-end shadow bg-white">
+            <!-- start sidenav content -->
+            <div class="container-fluid text-center py-2">
+                <a class="fs-4 text-nowrap text-dark text-decoration-none"
+                    href="https://github.com/mteguhpro/pagistrap">
+                    P<span class="text-menu">agi</span>s<span class="text-menu">trap</span>
+                </a>
+            </div>
+            <div class="nav nav-pills flex-column">
+                <a class="nav-link text-nowrap bg-transparent text-dark" href="https://tgh.my.id/pagistrap/"><i
+                        class="bi bi-house-door-fill"></i><span class="text-menu"> Home</span></a>
+                <a class="nav-link text-nowrap bg-transparent text-dark te-with-caret caret-open"
+                    data-bs-toggle="collapse" href="#collapseDemo" role="button" aria-expanded="true"
+                    aria-controls="collapseDemo">
+                    <i class="bi bi-layers-fill"></i><span class="text-menu"> Demo</span>
+                </a>
+                <div class="collapse show pb-3" id="collapseDemo">
+                    <a class="nav-link text-nowrap bg-transparent text-dark" href="./dashboard1.html"><i
+                            class="bi bi-layout-text-window-reverse"></i>
+                        <span class="text-menu"> Dashboard 1</span>
+                        <span class="text-menu badge bg-danger text-white position-absolute end-0 mx-2">1</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark"
+                        href="./dashboard2.html"><i class="bi bi-layout-text-window-reverse"></i><span
+                            class="text-menu"> Dashboard 2</span></a>
+                    <a class="nav-link text-nowrap bg-danger bg-gradient active rounded-pill"
+                        href="./dashboard3.html"><i class="bi bi-layout-text-window-reverse"></i><span
+                            class="text-menu"> Dashboard 3</span></a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" href="./blank_page.html"><i
+                            class="bi bi-layout-sidebar"></i><span class="text-menu"> Blank Page</span></a>
+                </div>
+                <a class="nav-link text-nowrap disabled" tabindex="-1" aria-disabled="true"><i
+                        class="bi bi-lock-fill"></i><span class="text-menu"> Disabled</span></a>
+                <a class="nav-link text-nowrap bg-transparent text-dark te-with-caret"
+                    data-bs-toggle="collapse" href="#collapseTutorial" role="button" aria-expanded="false"
+                    aria-controls="collapseTutorial">
+                    <i class="bi bi-question-circle"></i><span class="text-menu"> Tutorial</span>
+                </a>
+                <div class="collapse pb-3" id="collapseTutorial">
+                    <a class="nav-link text-nowrap bg-transparent text-dark"
+                        href="https://tgh.my.id/blog/2022/04/mengenal-sidebar-pada-pagistrap/"><i class="bi bi-circle"></i><span
+                            class="text-menu"> Sidenav</span></a>
+                </div>
+
+                <a class="nav-link text-nowrap bg-transparent text-dark te-with-caret" data-bs-toggle="collapse"
+                    href="#collapseComponents" role="button" aria-expanded="false" aria-controls="collapseComponents">
+                    <i class="bi bi-menu-button-wide-fill"></i><span class="text-menu"> Bootstrap Components</span>
+                </a>
+                <div class="collapse pb-3" id="collapseComponents">
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/accordion/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Accordion</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/alerts/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Alerts</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/badge/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Badge</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/breadcrumb/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Breadcrumb</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/buttons/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Buttons</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/button-group/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Button group</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/card/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Cards</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/carousel/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Carousel</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/close-button/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Close button</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/collapse/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Collapse</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/dropdowns/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Dropdowns</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/list-group/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> List group</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/modal/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Modal</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/navbar/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Navbar</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/navs-tabs/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Navs &amp; tabs</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/offcanvas/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Offcanvas</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/pagination/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Pagination</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/placeholders/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Placeholders</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/popovers/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Popovers</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/progress/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Progress</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/scrollspy/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Scrollspy</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/spinners/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Spinners</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/toasts/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Toasts</span>
+                    </a>
+                    <a class="nav-link text-nowrap bg-transparent text-dark" 
+                            href="https://getbootstrap.com/docs/5.2/components/tooltips/" target="_blank">
+                            <i class="bi bi-circle"></i><span class="text-menu"> Tooltips</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end sidenav content -->
+        </div>
+    </div>
+
+    <div class="te-out-sidenav position-relative">
+        <div class="position-absolute bg-danger bg-gradient py-5 w-100 top-0 start-0">
+            <div class="py-5"></div>
+        </div>
+        <!-- start main content -->
+        <nav class="navbar navbar-expand sticky-top navbar-light bg-danger bg-opacity-10">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-dark btn-sm me-2 my-1 te-toggle-sidenav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                </button>
+
+                <div class="d-flex">
+                    <form class="my-auto pe-2">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn btn-dark btn-sm mx-2 position-relative">
+                        <i class="bi bi-bell-fill"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-warning rounded-circle border">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn btn-dark btn-sm mx-2 position-relative">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge border rounded-pill bg-warning">
+                            12
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark dropdown-toggle btn-sm mx-2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end bg-transparent p-0 border-0">
+                            <div class="card shadow" style="width: 18rem;">
+                                <img src="https://picsum.photos/300/100.webp" class="card-img-top" alt="Foto Sampul">
+                                <div class="card-body text-center position-relative">
+                                    <img src="https://picsum.photos/100.webp"
+                                        class="w-25 position-absolute translate-middle border border-light rounded-circle"
+                                        alt="Foto Profil">
+                                    <h5 class="card-title mt-5">Nama Pengguna</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">@namapengguna</h6>
+                                    <p class="card-text">
+                                        <a href="#" class="card-link">Kebijakan Privasi</a>
+                                        <a href="#" class="card-link">Bantuan</a>
+                                    </p>
+
+                                    <div class="d-grid gap-2">
+                                        <button type="button" class="btn btn-dark"><i class="bi bi-gear-fill"></i>
+                                            Setting</button>
+                                        <button type="button" class="btn btn-dark text-danger"><i
+                                                class="bi bi-box-arrow-right"></i> Logout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-xxl mt-4 mb-5">
+            <!-- start playground -->
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-transparent mb-2 px-md-4 border-0">
+                        <h1 class="card-title text-white">Dashboard 3</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card shadow mb-2">
+                        <div class="card-header bg-white border border-bottom-0">
+                            <h2 class="card-title text-center">Form Login</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="my-2">
+                                    <label class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                                </div>
+                                <div class="form-check form-switch form-check-reverse">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                </div>                                  
+                                <div class="text-end my-2">
+                                    <button class="btn btn-danger bg-gradient" type="submit">Login</button>
+                                </div>
+                                <div class="text-center my-2">
+                                    <a href="#" class="link-dark">Forgot Password?</a>
+                                </div>
+                                <div class="text-center mt-4 mb-2">
+                                    Or login with
+                                    <div class="my-2">
+                                        <a class="btn btn-dark btn-sm" href="#" role="button">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                        <a class="btn btn-dark btn-sm" href="#" role="button">
+                                            <i class="bi bi-google"></i> Google
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card shadow mb-2">
+                        <div class="card-header bg-white border border-bottom-0">
+                            <h2 class="card-title text-center">Sign Up</h2>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="my-2">
+                                            <label class="form-label">First Name:</label>
+                                            <input type="text" class="form-control" id="first-name" placeholder="First Name" name="first-name">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="my-2">
+                                            <label class="form-label">Last Name:</label>
+                                            <input type="text" class="form-control" id="last-name" placeholder="Last Name" name="last-name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email-sign-up" placeholder="Enter email" name="email-sign-up">
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password-sign-up" placeholder="Enter password" name="password-sign-up">
+                                </div>
+                                <div class="my-2">
+                                    <label class="form-label">Confirm Password:</label>
+                                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" name="confirm-password">
+                                </div>
+                                <div class="text-center fw-light mt-4 mb-2">
+                                    By clicking "Sign Up", you agree to the 
+                                    <a href="#" class="link-dark">Terms</a> 
+                                    and acknowledge the 
+                                    <a href="#" class="link-dark">Privacy Policy</a>
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto my-2">
+                                    <button class="btn btn-danger bg-gradient" type="submit">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end playground -->
+        </div>
+
+        <!-- end main content -->
+    </div>
+
+    <div class="te-out-sidenav mt-auto">
+        <!-- start footer -->
+        <footer class="footer py-3 border-top bg-light bg-gradient">
+            <div class="container">
+                <span class="text-muted">2022 <i class="bi bi-heart"></i> for all happiness</span>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../pagistrap_assets/js/script.js"></script>
+    <script>
+        (function () {
+            'use strict';
+
+            //secara default sidenav dalam mode hide, kode dibawah untuk menampilkan sidenav saat pertama load di layar lebih 992
+            if (window.innerWidth >= 992) {
+                teSidenav.toggle();
+            }
+
+        })()
+    </script>
+</body>
+
+</html>
