@@ -11,5 +11,9 @@ Simple and ready-to-use page to start a new project.
 Admin dashboard with a simple and elegant design.
 ![Dashboard 1 pagistrap Bootstrap 5 template](https://github.com/mteguhpro/pagistrap/blob/main/preview/pagistrap_dashboard_1.PNG)
 
+### More:
+Explore more dashboard templates.
+![Dashboard template collection](https://tgh.my.id/pagistrap_assets/collection.png)
+
 ## Live Demo & Download
 [tgh.my.id/pagistrap/](https://tgh.my.id/pagistrap/)
