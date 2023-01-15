@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <!-- Required meta tags -->
@@ -143,15 +143,29 @@
         </div>
 
         <!-- end main content -->
-
-        <!-- start footer -->
-        <footer class="footer mt-auto py-3 border-top bg-light w-100 position-fixed bottom-0">
-            <div class="container">
-                <span class="text-muted">2023 <i class="bi bi-heart"></i> for all happiness</span>
-            </div>
-        </footer>
-        <!-- end footer -->
     </div>
+
+    <!-- start footer -->
+    <footer class="te-out-sidenav footer mt-auto py-3 border-top text-bg-secondary w-100 position-fixed bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 col-md-10 col-lg-11">
+                    <span>2023 <i class="bi bi-heart"></i> for all happiness</span>
+                </div>
+                <div class="col-3 col-md-2 col-lg-1">
+                    <form>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="darkSwitchCheckChecked">
+                            <label class="form-check-label" for="darkSwitchCheckChecked">
+                                <i class="bi bi-moon-fill"></i>
+                            </label>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
 
 
@@ -169,6 +183,15 @@
         if (window.innerWidth >= 992) {
             teSidenav.toggle();
         }
+
+        //dark mode
+        document.getElementById('darkSwitchCheckChecked').checked = (sessionStorage.teDark === 'dark')
+        document.getElementById('darkSwitchCheckChecked').addEventListener('change', switchDark)
+        function switchDark(){
+            sessionStorage.teDark = document.getElementById('darkSwitchCheckChecked').checked ? 'dark' : 'light'
+            document.getElementsByTagName('html')[0].dataset.bsTheme = sessionStorage.teDark
+        }
+        switchDark()
     </script>
 </body>
 
