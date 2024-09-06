@@ -50,7 +50,29 @@ var teSidenav = (function () {
         el.onclick = function (e) {
             el.classList.toggle('caret-open')
         }
-    })
+    });
+
+    (function(){
+        var active = ""
+        var nonActive = ""
+        getClass(sn, function(el){
+            active = el.dataset.teSideActive
+            nonActive = el.dataset.teSideNonActive
+
+            getClass(el.getElementsByClassName(nonActive), function(el){
+                var thisUrl = new URL(window.location.href)
+                var elUrl = typeof el !== 'undefined' && typeof el.href !== 'undefined' ? new URL(el.href) : ""
+                if(thisUrl.toString() === elUrl.toString()){
+                    nonActive.split(" ").forEach(function(item){
+                        el.classList.remove(item)
+                    })
+                    active.split(" ").forEach(function(item){
+                        el.classList.add(item)
+                    })
+                }
+            })
+        })
+    })();
 
     return {
         isShow: isShow,
